@@ -7,14 +7,12 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-# Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=10000
 SAVEHIST=10000
-setopt appendhistory autocd nomatch notify prompt_subst
+setopt appendhistory autocd nomatch notify prompt_subst share_history
 unsetopt beep
 bindkey -e
-# End of lines configured by zsh-newuser-install
 
 # Jinn's customization
 autoload -U colors && colors
@@ -41,7 +39,8 @@ function prompt_char {
 # stuff to be commited.
 function git_branch {
     git branch >/dev/null 2>/dev/null && echo -n "git:"$(git branch | grep "*" | sed 's/* //')
-    git status >/dev/null 2>/dev/null | grep Changes >/dev/null 2>/dev/null && echo "* " && return
+    git status >/dev/null 2>/dev/null | grep Untracked >/dev/null 2>/dev/null && echo -n "+" 
+    git status >/dev/null 2>/dev/null | grep Changes >/dev/null 2>/dev/null && echo -n "*"
     echo " "
 }
 
@@ -73,6 +72,7 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias ai='sudo apt-get install'
 alias asr='apt-cache search'
+alias ash='apt-cache show'
 alias sudo='sudo '
 alias ll='ls -alh'
 alias l='ls -lh'
@@ -92,7 +92,7 @@ alias man="TERMINFO=~/.terminfo/ LESS=C TERM=mostlike PAGER=less man"
 # evironment variables
 export HS='alsa_output.usb-047f_c001-00-U0x47f0xc001.analog-stereo'
 export SP='alsa_output.pci-0000_00_1b.0.analog-stereo'
-export EDITOR='/usr/local/bin/ec'
+export EDITOR='/usr/local/bin/ecnw'
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/scripts
 
 # turn off XOFF/XON

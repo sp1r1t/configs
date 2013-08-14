@@ -1,0 +1,25 @@
+[general]
+ui = Quiet
+accounts = main
+#pythonfile = ~/.offlineimap.py
+
+[Account main]
+autorefresh = 5
+quick = 10
+localrepository = main-local
+remoterepository = main-remote
+
+[Repository main-local]
+type = Maildir
+localfolders = /home/jinn/.mail
+
+[Repository main-remote]
+keepalive = 60
+type = Gmail
+realdelete = no
+ssl = yes
+remoteuser = freekmunky@jinn.at
+
+folderfilter = lambda foldername: foldername in ['[Google Mail]/All Mail']
+nametrans = lambda foldername: re.sub('^\[Google Mail\]/All Mail$', 'all', 
+                               re.sub('^\[Google Mail\]/Sent Mail$', 'sent',foldername))

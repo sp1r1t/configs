@@ -5,8 +5,9 @@ echo "--- starting xinitrc ---"
 # Load resources
 
 echo "merging .Xresources"
-xrdb -merge .Xresources
-#xrdb -merge .Xdefaults
+#xrdb -merge .Xresources
+echo "merging .Xdefaults"
+xrdb -merge .Xdefaults
 
 # set up dual monitor
 #xrandr --output DVI-I-1 --auto --primary --left-of DVI-I-2 --auto
@@ -27,6 +28,13 @@ eval `cat ~/.fehbg`
 # turn off the anoying beep
 echo "turning bell off"
 xset -b 
+
+# start composit manager
+echo "starting xcompmgr"
+xcompmgr -c -o 0 &
+
+# start conky
+conky -a top_left -x 1460 -y 425 &
 
 # Fire up apps
 echo "starting apps"
