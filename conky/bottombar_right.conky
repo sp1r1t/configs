@@ -14,4 +14,5 @@ uppercase no
 TEXT
 B: $battery_percent | D: ${totaldown wlan0}  U: ${totalup wlan0} | \
 ns: ${nameserver 0} ${nameserver 1} |\
-${if_up eth0} eth0: ${addr eth0}${endif eth0} ${if_up wlan0}wlan0: ${addr wlan0}$endif
+${if_up eth0} eth0: ${addr eth0}${endif eth0} ${if_up wlan0}wlan0: ${addr wlan0}$endif | \
+${execi 3 /scripts/test_inetcon.sh}
