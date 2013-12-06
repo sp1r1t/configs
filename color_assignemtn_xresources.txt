@@ -1,0 +1,20 @@
+# foreground
+0: 30, black
+1: 31, red
+2: 32, green
+3: 33, yellow
+4: 34, blue
+5: 35, magenta
+6: 36, cyan
+7: 37, white
+
+# background
+ 8: 40, black
+10: 41, red
+11: 42, green
+12: 43, yellow
+13: 44, blue
+14: 45, magenta
+15: 46, cyan
+16: 47, white
+17: 48, default

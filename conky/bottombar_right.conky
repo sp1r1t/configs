@@ -1,0 +1,17 @@
+# BOTTOM BAR
+
+background no
+out_to_console yes
+out_to_x no
+update_interval 2.0
+total_run_times 0
+use_spacer none
+
+uppercase no
+
+# Font
+
+TEXT
+B: $battery_percent | D: ${totaldown wlan0}  U: ${totalup wlan0} | \
+ns: ${nameserver 0} ${nameserver 1} |\
+${if_up eth0} eth0: ${addr eth0}${endif eth0} ${if_up wlan0}wlan0: ${addr wlan0}$endif
