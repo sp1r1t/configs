@@ -1,0 +1,174 @@
+!~/.xresources > imrahil@triceratops
+! <xfontsel> for selection
+
+! Applications without fontconfig support
+Xft.antialias: 1
+Xft.autohint: 0
+Xft.hinting: 1
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcddefault
+Xft.rgba: rgb
+
+! xterm
+xterm*termName: xterm-256color
+xterm*locale: true
+xterm*saveLines: 4096
+xterm*faceName: Vera Sans Mono:size=10.5:antialias=true
+xterm*font: 7x13
+xterm*metaSendsEscape: true
+
+xterm*foreground: rgb:a8/a8/a8
+xterm*background: rgb:00/00/00
+
+! # foreground
+! 0: 30, black
+! 1: 31, red
+! 2: 32, green
+! 3: 33, yellow
+! 4: 34, blue
+! 5: 35, magenta
+! 6: 36, cyan
+! 7: 37, white
+! 
+! # background
+!  8: 40, black
+! 10: 41, red
+! 11: 42, green
+! 12: 43, yellow
+! 13: 44, blue
+! 14: 45, magenta
+! 15: 46, cyan
+! 16: 47, white
+! 17: 48, default
+
+
+xterm*color0: rgb:00/00/00
+xterm*color1: rgb:ad/51/3e
+xterm*color2: rgb:4c/7d/58
+xterm*color3: rgb:a8/ac/35
+xterm*color4: rgb:27/38/87
+xterm*color5: rgb:66/66/99
+xterm*color6: rgb:8c/af/f0
+xterm*color7: rgb:a8/a8/a8
+xterm*color8: rgb:2c/2f/30
+xterm*color9: rgb:e0/67/1b
+xterm*color10: rgb:31/de/96
+xterm*color11: rgb:da/df/45
+xterm*color12: rgb:39/55/c4
+xterm*color13: rgb:88/88/cc
+xterm*color14: rgb:9b/ba/f1
+xterm*color15: rgb:f0/f0/f0
+
+! DZEN2 :: look for conkyzen/xmonad.hs as well
+!fg:#6a6464 
+!dzen2.font:       xft:Bitstream Vera Sans Mono:size=12:style=Bold
+!dzen2.foreground: #A89C8C
+!dzen2.foreground: #ff0000
+!dzen2.background: #303030
+
+dzen2.font:       -*-fixed-*-*-*-*-*-*-*-*-*-*-*-*
+dzen2.foreground: #22EE11
+dzen2.background: black
+
+! Emacs
+!Emacs.FontBackend: xft
+!Emacs.font: Bitstream Vera Sans Mono-12
+!Emacs.font: xft:Bitstream Vera Sans Mono:size=12:antialise:true
+Emacs.font: -unknown-DejaVu Sans Mono-normal-normal-normal-*-*-*-*-*-m-0-iso10646-1
+!Emacs*foreground:   #A89C8C
+!Emacs*background:   #303030
+!Emacs*cursorColor:  white
+!Emacs*pointerColor: white
+
+!URXVT
+!urxvt*termname:  consolicus
+!urxvt*title: consolicus
+!urxvt*loginshell: true ! > ttps://wiki.archlinux.org/index.php/Rxvt-unicode
+!urxvt*scrollBar: false
+!urxvt*saveLines: 10000
+!urxvt*pointerblank: true
+!urxvt*letterSpace: 0
+!urxvt*font: xft:Bitstream Vera Sans Mono:size=10
+!urxvt*boldFont: xft:Bitstream Vera Sans Mono:size=10:style=Bold
+!urxvt*foreground:       #A89C8C
+!urxvt*background:       #000000
+
+!urxvt*fading: 0	!Fade the text by the given percentage when focus is lost.
+
+!native transparency
+!urxvt*transparent: true
+!urxvt*shading: 50	! 0 to 99 darkens, 101 to 200 lightens
+
+!real transparency > needs xcompmgr
+!urxvt.depth: 32
+!urxvt.background: [95]#000000
+
+
+!neuromouse
+!*color0:  #282a2b
+!*color1:  #AD513E
+!*color2:  #4C7D58
+!*color3:  #a8ac35
+!*color4:  #273a87
+!*color5:  #666699
+!*color6:  #8caff0
+!*color7:  #a8a8a8
+!*color8:  #2c2f30
+!*color9:  #E0671B
+!*color10: #31DE96
+!*color11: #dadf45
+!*color12: #3955c4
+!*color13: #8888cc
+!*color14: #9bbaf1
+!*color15: #f0f0f0
+
+
+! Xcalc ----------------------------------------------------------------------
+xcalc*ti.button1.vertDistance: 4
+xcalc*ti.button2.vertDistance: 4
+xcalc*ti.button3.vertDistance: 4
+xcalc*ti.button4.vertDistance: 4
+xcalc*ti.button5.vertDistance: 4
+xcalc*ti.background: gray90
+xcalc*ti.bevel.borderColor: gray65
+xcalc*ti.bevel.borderWidth: 1
+xcalc*ti.bevel.vertDistance: 4
+xcalc*ti.bevel.defaultDistance: 0
+xcalc*ti.bevel.background: rgb:b/c/b
+xcalc*ti.bevel.screen*background: rgb:b/c/b
+xcalc*ti.bevel.screen.borderColor: rgb:b/c/b
+xcalc*ti.bevel.screen.vertDistance: 10
+xcalc*ti.bevel.screen.horizDistance: 10
+xcalc*ti.bevel.screen*left: chainLeft
+xcalc*ti.bevel.screen*right: chainRight
+xcalc*ti.bevel.screen*top: chainTop
+xcalc*ti.bevel.screen*bottom: chainBottom
+xcalc*ti.bevel.screen*LCD.foreground: gray10
+xcalc*ti.bevel.screen*INV.vertDistance: 0
+xcalc*ti.Command.borderColor: gray65
+xcalc*ti.Command.background: gray85
+xcalc*ti.Command.foreground: gray30
+xcalc*ti.button5.background: rgb:e/b/b
+xcalc*ti.button20.background: rgb:e/d/c
+xcalc*ti.button25.background: rgb:e/d/c
+xcalc*ti.button30.background: rgb:e/d/c
+xcalc*ti.button35.background: rgb:e/d/c
+xcalc*ti.button40.background: rgb:b/b/e
+xcalc*ti.button22.background: gray95
+xcalc*ti.button23.background: gray95
+xcalc*ti.button24.background: gray95
+xcalc*ti.button27.background: gray95
+xcalc*ti.button28.background: gray95
+xcalc*ti.button29.background: gray95
+xcalc*ti.button32.background: gray95
+xcalc*ti.button33.background: gray95
+xcalc*ti.button34.background: gray95
+xcalc*ti.button37.background: gray95
+xcalc*ti.button38.background: gray95
+xcalc*ti.button39.background: gray95
+
+! Xclock --------------------------------------------------------------------
+xclock*update:            1
+xclock*analog:            true
+xclock*foreground:        gray
+xclock*background:        black
