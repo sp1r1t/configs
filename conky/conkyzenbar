@@ -1,0 +1,32 @@
+#~/scripts/conkybattoprrc
+# > conky.sourceforge.net/variables.html
+
+background no
+out_to_console yes
+out_to_x no
+update_interval 1.0
+total_run_times 0
+use_spacer none
+
+
+
+TEXT
+
+^fg(\#39aaff)\
+ ${cpu cpu1}\
+ ${cpu cpu2}\
+ ${cpu cpu3}\
+ ${cpu cpu4}\
+ ${cpu cpu5}\
+ ${cpu cpu6}\
+ ${cpu cpu7}\
+ ${cpu cpu8}\
+ ^fg()\
+ ^fg(\#39aaff)\
+ ${freq_g}\
+^fg() \
+  \
+^fg(\#39aaff)\
+#${membar}
+ ${mem} \
+${time ^ca(1,/scripts/dzencal) ^fg()%A %d %b ^ca()^fg(#FF8E38) %H:%M} 
