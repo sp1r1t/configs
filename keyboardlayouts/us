@@ -66,7 +66,11 @@ xkb_symbols "jinn" {
     key <AC10> { [ semicolon,       colon,     odiaeresis,          Odiaeresis ] };
     key <AC11> { [ apostrophe,   quotedbl,     adiaeresis,          Adiaeresis ] };
     key <AE11> { [ minus,      underscore,     ssharp                          ] };
-    key <AD03> { [ e,                   E,     EuroSign,               EuroSign] };
+    key <AD03> { [ e,                   E,     EuroSign,              EuroSign ] };
+    key <AC01> { [         a,           A,     adiaeresis,          Adiaeresis ] };
+    key <AD09> { [         o,           O,     odiaeresis,          Odiaeresis ] };
+    key <AD07> { [         u,           U,     udiaeresis,          Udiaeresis ] };
+    key <AC02> { [         s,           S,     ssharp                          ] };
     include "level3(ralt_switch)"
 };
 
