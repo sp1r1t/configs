@@ -4,23 +4,8 @@ xkb_symbols "jinn" {
     include "us(basic)"
     name[Group1]= "English (US, jinns umlaute)";
 
-    key <AD11> { [ bracketleft, braceleft,     udiaeresis,          Udiaeresis ] };
-    key <AC10> { [ semicolon,       colon,     odiaeresis,          Odiaeresis ] };
-    key <AC11> { [ apostrophe,   quotedbl,     adiaeresis,          Adiaeresis ] };
-    key <AE11> { [ minus,      underscore,     ssharp                          ] };
-    key <AD03> { [ e,                   E,     EuroSign,              EuroSign ] };
-    key <AC01> { [         a,           A,     adiaeresis,          Adiaeresis ] };
-    key <AD09> { [         o,           O,     odiaeresis,          Odiaeresis ] };
-    key <AD07> { [         u,           U,     udiaeresis,          Udiaeresis ] };
-    key <AC02> { [         s,           S,     ssharp                          ] };
-    include "level3(ralt_switch)"
-};
-
-partial alphanumeric_keys
-xkb_symbols "jinn" {
-
-    include "us(basic)"
-    name[Group1]= "English (US, jinns umlaute)";
+    key <AE02>	{[	 2,	 at, 	U00B2]};
+    key <AE03>	{[	 3,	 numbersign, U00B3	]};
 
     key <AD11> { [ bracketleft, braceleft,     udiaeresis,          Udiaeresis ] };
     key <AC10> { [ semicolon,       colon,     odiaeresis,          Odiaeresis ] };
@@ -40,6 +25,9 @@ xkb_symbols "jinnman" {
     include "us(basic)"
     include "eurosign(e)"
     name[Group1]= "English (Workman)";
+
+    key <AE02>	{[	 2,	 at, 	U00B2]};
+    key <AE03>	{[	 3,	 numbersign, U00B3	]};
 
     key <AD01> {  [   q,  Q   ] };
     key <AD02> {  [   d,  D   ] };
