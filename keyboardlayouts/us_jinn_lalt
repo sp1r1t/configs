@@ -1,0 +1,65 @@
+partial alphanumeric_keys
+xkb_symbols "jinn" {
+
+    include "us(basic)"
+    name[Group1]= "English (US, jinns umlaute)";
+
+    key <AE02>	{[	 2,	 at, 	U00B2]};
+    key <AE03>	{[	 3,	 numbersign, U00B3	]};
+
+    key <AD11> { [ bracketleft, braceleft,     udiaeresis,          Udiaeresis ] };
+    key <AC10> { [ semicolon,       colon,     odiaeresis,          Odiaeresis ] };
+    key <AC11> { [ apostrophe,   quotedbl,     adiaeresis,          Adiaeresis ] };
+    key <AE11> { [ minus,      underscore,     ssharp                          ] };
+    key <AD03> { [ e,                   E,     EuroSign,              EuroSign ] };
+    key <AC01> { [         a,           A,     adiaeresis,          Adiaeresis ] };
+    key <AD09> { [         o,           O,     odiaeresis,          Odiaeresis ] };
+    key <AD07> { [         u,           U,     udiaeresis,          Udiaeresis ] };
+    key <AC02> { [         s,           S,     ssharp                          ] };
+    include "level3(lalt_switch)"
+};
+
+partial alphanumeric_keys
+xkb_symbols "jinnman" {
+
+    include "us(basic)"
+    include "eurosign(e)"
+    name[Group1]= "English (Workman)";
+
+    key <AE02>	{[	 2,	 at, 	U00B2]};
+    key <AE03>	{[	 3,	 numbersign, U00B3	]};
+
+    key <AD01> {  [   q,  Q   ] };
+    key <AD02> {  [   d,  D   ] };
+    key <AD03> {  [   r,  R   ] };
+    key <AD04> {  [   w,  W   ] };
+    key <AD05> {  [   b,  B   ] };
+    key <AD06> {  [   j,  J   ] };
+    key <AD07> {  [   f,  F   ] };
+    key <AD08> {  [   u,  U,     udiaeresis,          Udiaeresi   ] };
+    key <AD09> {  [   p,  P   ] };
+    key <AD10> {  [   semicolon,  colon   ] };
+
+    key <AC01> {  [   a,  A,     adiaeresis,          Adiaeresis   ] };
+    key <AC02> {  [   s,  S,     ssharp   ] };
+    key <AC03> {  [   h,  H   ] };
+    key <AC04> {  [   t,  T   ] };
+    key <AC05> {  [   g,  G   ] };
+    key <AC06> {  [   y,  Y   ] };
+    key <AC07> {  [   n,  N   ] };
+    key <AC08> {  [   e,  E,     EuroSign,              EuroSig   ] };
+    key <AC09> {  [   o,  O,     odiaeresis,          Odiaeresis  ] };
+    key <AC10> {  [   i,  I   ] };
+
+    key <AB01> {  [   z,  Z   ] };
+    key <AB02> {  [   x,  X   ] };
+    key <AB03> {  [   m,  M   ] };
+    key <AB04> {  [   c,  C   ] };
+    key <AB05> {  [   v,  V   ] };
+    key <AB06> {  [   k,  K   ] };
+    key <AB07> {  [   l,  L   ] };
+
+    key <CAPS> { [    BackSpace,       Escape,       BackSpace,        BackSpace ] };
+
+    include "level3(lalt_switch)"
+};
